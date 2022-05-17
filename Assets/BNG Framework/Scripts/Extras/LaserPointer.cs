@@ -20,6 +20,7 @@ namespace BNG {
         // Start is called before the first frame update
         void Start() {
             line = GetComponent<LineRenderer>();
+            LaserEnd.gameObject.SetActive(true);
         }
 
         void LateUpdate() {
@@ -42,11 +43,13 @@ namespace BNG {
                     line.useWorldSpace = false;
                     line.SetPosition(0, transform.localPosition);
                     line.SetPosition(1, new Vector3(0, 0, MaxRange));
-                    LaserEnd.gameObject.SetActive(false);
+                    //LaserEnd.gameObject.SetActive(false);
+                    LaserEnd.gameObject.SetActive(true);
                 }
             }
             else {
-                LaserEnd.gameObject.SetActive(false);
+                LaserEnd.gameObject.SetActive(true);
+                //LaserEnd.gameObject.SetActive(false);
 
                 if (line) {
                     line.enabled = false;
