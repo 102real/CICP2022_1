@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     public GameObject Sound6;
     public GameObject Sound7;
 
+    public GameObject potal;
+
     // Update is called once per frame
     void Update()
     {
@@ -40,6 +42,11 @@ public class GameManager : MonoBehaviour
         if (tagCt == 6)
         {
             Sound6.SetActive(true);
+        }
+        if (tagCt == 7)
+        {
+            Sound7.SetActive(true);
+            potal.SetActive(true);
         }
     }
 

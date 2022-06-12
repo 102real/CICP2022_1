@@ -23,7 +23,7 @@ public class EraserTag : MonoBehaviour
             tag1.SetActive(false);
             tag2.SetActive(true);
             tag3.SetActive(true);
-            if(tag1.activeSelf == false)
+            if (tag1.activeSelf == false)
             {
                 GameObject.Find("GameManager").GetComponent<GameManager>().TagAble();
             }
