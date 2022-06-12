@@ -10,6 +10,7 @@ TagManager:
   - Flashlight
   - VentilationGrid
   - Eraser
+  - Block
   layers:
   - Default
   - TransparentFX
