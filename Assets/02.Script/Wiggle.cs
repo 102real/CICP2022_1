@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class Wiggle : MonoBehaviour
 {
-
-    float startTime;
-    float animDur = 30.0f;
+float startTime;
+    float animDur = 60.0f;
 
     Vector3 startPos, endPos;
-    float posRange = 1f;
+    float posRange = .1f;
     public bool noZMove = true;
 
     
@@ -17,7 +16,8 @@ public class Wiggle : MonoBehaviour
     void Start()
     {
         startPos = transform.position;
-
+        animDur = Random.Range(3, 100);
+        posRange = Random.Range(0.1f, 2.0f);
         makeNewEnds();
     }
 

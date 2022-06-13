@@ -11,6 +11,7 @@ TagManager:
   - VentilationGrid
   - Eraser
   - Block
+  - Change
   layers:
   - Default
   - TransparentFX
