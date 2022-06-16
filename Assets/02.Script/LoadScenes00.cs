@@ -6,12 +6,19 @@ using UnityEngine.SceneManagement;
  public class LoadScenes00 : MonoBehaviour
     {
 
-        [Tooltip("Wait this long in seconds before attempting to load the scene. Useful if you need to fade the screen out before attempting to load the level.")]
+    public bool scenechage = false;
         public float ScreenFadeTime = 1f;
 
-        
 
-        public void LoadScene()
+    public void Update()
+    {
+        if (scenechage)
+        {
+            LoadScene();
+        }
+    }
+
+    public void LoadScene()
         {
             StartCoroutine("FadeThenLoadScene");            
         }
@@ -37,7 +44,7 @@ using UnityEngine.SceneManagement;
                 yield return new WaitForSeconds(ScreenFadeTime);
             }
 
-            SceneManager.LoadScene("02.TR");
+            SceneManager.LoadScene("01.Main_JH");
         }
     }
 
