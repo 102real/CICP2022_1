@@ -159,6 +159,42 @@ Transform:
   m_Father: {fileID: 665423900}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!84 &199284886
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WaterDepthMap
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 3
+  m_Width: 1024
+  m_Height: 1024
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthFormat: 2
+  m_ColorFormat: 142
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1 &202063126
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,7 +370,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC624\uBA85\uC11D"
+  m_text: "\uBC30\uC8FC\uD615"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b9d072f1e223473469df8a0e95e95c8c, type: 2}
   m_sharedMaterial: {fileID: 7523054059422169690, guid: b9d072f1e223473469df8a0e95e95c8c,
@@ -627,7 +663,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC2E0\uC218\uBBFC \uAE40\uD61C\uB9B0 \uC624\uBA85\uC11D \uBC30\uC8FC\uD615
+  m_text: "\uAE40\uD61C\uB9B0 \uBC30\uC8FC\uD615 \uC2E0\uC218\uBBFC \uC624\uBA85\uC11D
     \uC774\uD61C\uC5F0"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b9d072f1e223473469df8a0e95e95c8c, type: 2}
@@ -723,7 +759,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &508286229
 RectTransform:
   m_ObjectHideFlags: 0
@@ -763,7 +799,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uBC30\uC8FC\uD615"
+  m_text: "\uAE40\uD61C\uB9B0"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b9d072f1e223473469df8a0e95e95c8c, type: 2}
   m_sharedMaterial: {fileID: 7523054059422169690, guid: b9d072f1e223473469df8a0e95e95c8c,
@@ -1067,7 +1103,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &731609438
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1107,7 +1143,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uD504\uB85C\uADF8\uB798\uBC0D"
+  m_text: "\uC791\uACE1"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b9d072f1e223473469df8a0e95e95c8c, type: 2}
   m_sharedMaterial: {fileID: 7523054059422169690, guid: b9d072f1e223473469df8a0e95e95c8c,
@@ -1202,7 +1238,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &997816431
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1242,7 +1278,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC774\uD61C\uC5F0 \uBC30\uC8FC\uD615"
+  m_text: "\uC624\uBA85\uC11D"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b9d072f1e223473469df8a0e95e95c8c, type: 2}
   m_sharedMaterial: {fileID: 7523054059422169690, guid: b9d072f1e223473469df8a0e95e95c8c,
@@ -1629,7 +1665,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uAE40\uD61C\uB9B0"
+  m_text: "\uC774\uD61C\uC5F0 \uC2E0\uC218\uBBFC \uBC30\uC8FC\uD615"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b9d072f1e223473469df8a0e95e95c8c, type: 2}
   m_sharedMaterial: {fileID: 7523054059422169690, guid: b9d072f1e223473469df8a0e95e95c8c,
@@ -1730,7 +1766,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1292303934
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1770,7 +1806,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uADF8\uB798\uD53D \uB514\uC790\uC778"
+  m_text: "\uC0AC\uC6B4\uB4DC\uB514\uC790\uC778"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b9d072f1e223473469df8a0e95e95c8c, type: 2}
   m_sharedMaterial: {fileID: 7523054059422169690, guid: b9d072f1e223473469df8a0e95e95c8c,
@@ -2379,42 +2415,6 @@ LightProbeGroup:
   - {x: -0.8738291, y: 0.51661086, z: 2.5225298}
   - {x: -1.3810283, y: 0.51661086, z: 2.9244456}
   m_Dering: 0
---- !u!84 &1458749229
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: WaterDepthMap
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 3
-  m_Width: 1024
-  m_Height: 1024
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthFormat: 2
-  m_ColorFormat: 142
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1 &1521340525 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2683195716758895198, guid: 4ac7df741a9c0a2418ec19477729ee3d,
@@ -2470,7 +2470,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1550617907
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2688,7 +2688,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC791\uACE1"
+  m_text: "\uADF8\uB798\uD53D \uB514\uC790\uC778"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b9d072f1e223473469df8a0e95e95c8c, type: 2}
   m_sharedMaterial: {fileID: 7523054059422169690, guid: b9d072f1e223473469df8a0e95e95c8c,
@@ -2992,7 +2992,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC0AC\uC6B4\uB4DC \uB514\uC790\uC778"
+  m_text: "\uD504\uB85C\uADF8\uB798\uBC0D"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b9d072f1e223473469df8a0e95e95c8c, type: 2}
   m_sharedMaterial: {fileID: 7523054059422169690, guid: b9d072f1e223473469df8a0e95e95c8c,

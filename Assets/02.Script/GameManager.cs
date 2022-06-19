@@ -20,8 +20,9 @@ public class GameManager : MonoBehaviour
     public GameObject Sound11;
     public GameObject Sound12;
     public GameObject you;
-    public GameObject Eraser_touch_efx;
-    AudioSource audioSource;
+    public GameObject outro;
+    public GameObject potal_efx;
+    public GameObject erg;
 
     private int s2count = 0;
 
@@ -29,7 +30,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        audioSource = gameObject.AddComponent<AudioSource>();
+        
     }
 
     // Update is called once per frame
@@ -39,57 +40,74 @@ public class GameManager : MonoBehaviour
 
         if(tagCt == 1)
         {
+            erg.SetActive(false);
+            erg.SetActive(true);
             Sound1.SetActive(true);
         }
         if (tagCt == 2)
         {
+            erg.SetActive(false);
+            erg.SetActive(true);
             Sound2.SetActive(true);
         }
         if (tagCt == 3)
         {
+            erg.SetActive(false);
+            erg.SetActive(true);
             Sound3.SetActive(true);
         }
         if (tagCt == 4)
         {
-            Sound4.SetActive(true);
-        }
-        if (tagCt == 5)
-        {
+            erg.SetActive(false);
+            erg.SetActive(true);
             Sound5.SetActive(true);
         }
         if (tagCt == 6)
         {
+            erg.SetActive(false);
+            erg.SetActive(true);
             Sound6.SetActive(true);
         }
         if (tagCt == 7)
         {
+            erg.SetActive(false);
+            erg.SetActive(true);
             Sound7.SetActive(true);
         }
         if (tagCt == 8)
         {
+            erg.SetActive(false);
+            erg.SetActive(true);
             Sound8.SetActive(true);
         }
         if (tagCt == 9)
         {
+            erg.SetActive(false);
+            erg.SetActive(true);
             Sound9.SetActive(true);
         }
         if (tagCt == 10)
         {
+            erg.SetActive(false);
+            erg.SetActive(true);
             Sound10.SetActive(true);
         }
         if (tagCt == 11)
         {
+            erg.SetActive(false);
+            erg.SetActive(true);
             Sound11.SetActive(true);
         }
         if (tagCt == 12)
         {
-            Sound12.SetActive(true);
+            
+            potal_efx.SetActive(true);
             potal.SetActive(true);
         }
 
         if (SceneManager.GetActiveScene().name== "02.TR" && s2count==0)
         {
-            audioSource.Play();
+            potal_efx.SetActive(false);
             s2count = s2count+1;
             potal.SetActive(false);
             Debug.Log("02.TR");
@@ -113,74 +131,35 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(10f);
         GameObject.Find("TR_AnimManager").GetComponent<LoadScenes02>().Anim02();
         Sound1.SetActive(false);
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(1f);
         Sound2.SetActive(false);
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1f);
         Sound3.SetActive(false);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(.2f);
         Sound4.SetActive(false);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(.2f);
         Sound5.SetActive(false);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         Sound6.SetActive(false);
+        yield return new WaitForSeconds(.2f);
         Sound7.SetActive(false);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(.2f);
         Sound8.SetActive(false);
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(.2f);
         Sound9.SetActive(false);
+        
+        yield return new WaitForSeconds(1f);
         Sound10.SetActive(false);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(.2f);
         Sound11.SetActive(false);
+        yield return new WaitForSeconds(.2f);
         Sound12.SetActive(false);
+        potal_efx.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        outro.SetActive(true);
+
+
     }
 
-    public void SoundMt1()
-    {
-        Sound1.SetActive(false);
-    }
-    public void SoundMt2()
-    {
-        Sound2.SetActive(false);
-    }
-    public void SoundMt3()
-    {
-        Sound3.SetActive(false);
-    }
-    public void SoundMt4()
-    {
-        Sound4.SetActive(false);
-    }
-    public void SoundMt5()
-    {
-        Sound5.SetActive(false);
-    }
-    public void SoundMt6()
-    {
-        Sound6.SetActive(false);
-    }
-    public void SoundMt7()
-    {
-        Sound7.SetActive(false);
-    }
-    public void SoundMt8()
-    {
-        Sound8.SetActive(false);
-    }
-    public void SoundMt9()
-    {
-        Sound9.SetActive(false);
-    }
-    public void SoundMt10()
-    {
-        Sound10.SetActive(false);
-    }
-    public void SoundMt11()
-    {
-        Sound11.SetActive(false);
-    }
-    public void SoundMt12()
-    {
-        Sound12.SetActive(false);
-    }
-
+   
 }
